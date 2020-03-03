@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Drag & Drop Bootstrap Form Builder</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="stylesheet/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet/all.min.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+        <!-- <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="stylesheet/style.css"/>
+        <style>
+        body { background-color: #fafafa; }
+    </style>
+    </head>
+    <body>
+        <div id="wrapper">
+        <nav class="navbar navbar-expand-sm  navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#">
+    <img src="images/logo_newsletter.png" alt="logo" >
+    </a>
+        </nav>
+            <div class="container-fluid">
+            
+            <div class="form_builder">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <div class="nav-sidebar">
+                            <ul class="nav btn-group-vertical">
+                                <li class="form_bal_textfield btn btn-primary btn-block">
+                                    <a href="javascript:;">TB </a>
+                                </li>
+                                <li class="form_bal_textarea btn btn-primary btn-block">
+                                    <a href="javascript:;">TA </a>
+                                </li>
+                                <li class="form_bal_select btn btn-primary btn-block">
+                                    <a href="javascript:;">SL </a>
+                                </li>
+                                <li class="form_bal_radio btn btn-primary btn-block">
+                                    <a href="javascript:;"> RD </a>
+                                </li>
+                                <li class="form_bal_checkbox btn btn-primary btn-block">
+                                    <a href="javascript:;">CH </a>
+                                </li>
+                                <li class="form_bal_email btn btn-primary btn-block">
+                                    <a href="javascript:;">EM </a>
+                                </li>
+                                <li class="form_bal_number btn btn-primary btn-block">
+                                    <a href="javascript:;">NM </a>
+                                </li>
+                                <li class="form_bal_password btn btn-primary btn-block">
+                                    <a href="javascript:;">PSW </a>
+                                </li>
+                                <li class="form_bal_date btn btn-primary btn-block">
+                                    <a href="javascript:;">DT </a>
+                                </li>
+                                <li class="form_bal_button btn btn-primary btn-block">
+                                    <a href="javascript:;">BT </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5 bal_builder">
+                        <div class="form_builder_area" id="form"></div>
+                    </div>
+                    <div class="col-md-5 bal_builder second">
+                        <div class="col-md-12">
+                            <form class="form-horizontal">
+                                <div class="preview"></div>
+                                <div style="display: none" class="form-group plain_html"><textarea rows="50" class="form-control"></textarea></div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <script type="text/javascript" src="javascript/jquery.min.js"></script>
+        <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+        
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <script src="javascript/script.js"></script>
+
+        <script type="text/javascript">
+
+              $( "form" ).submit(function( event ) {
+  console.log( $( this ).serializeArray() );
+  event.preventDefault();
+});
+        </script>
+    </body>
+
+</html>
